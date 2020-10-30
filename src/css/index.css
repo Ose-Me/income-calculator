@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.top-link {
+  color: #083e9e !important;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-light .navbar-brand {
+  color: #083e9e;
+}
+
+.image {
+  margin-top: -3.5rem;
+  width: 100%;
+}
+
+.form-control {
+  padding: 0.7rem 0.8rem;
+}
+
+.background-fill {
+  position: fixed;
+  opacity: 0.1;
+  right: 0;
+  max-width: 500px;
+}
+
+.form-control {
+  padding: 1.25rem 1rem;
+  border-radius: 7px;
+  border-bottom-left-radius: 0px;
+}
+
+.custom-select {
+  height: unset;
+  padding: 0.5rem 1.75rem 0.5rem 0.75rem;
+  border-radius: 7px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn-primary {
+  background-color: #083e9e;
+  border-color: #083e9e;
+}
+
+.btn-primary:hover {
+  background-color: #093b92;
+  border-color: #083e9e;
+}
+
+.btn-outline-primary {
+  color: #083e9e;
+  border-color: #083e9e;
+}
+
+.btn-outline-primary:hover {
+  background-color: #083e9e;
+  border-color: #083e9e;
+}
+
+.card-sub-heading {
+  color: #083e9e;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+}
