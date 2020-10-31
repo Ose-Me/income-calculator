@@ -5,16 +5,26 @@ const income = (data) => {
   let earnings = 0;
 
   console.log(data);
+  // earnings when hours worked is less than or equal to 4
   if (data.hours <= 4) {
     earnings = data.hours * 1000;
     total = earnings;
+    document.getElementById("warning-msg").style.display = "none";
   }
-  if (data.hours > 4) {
+
+  // earnings when hours worked is greater than four
+  if (data.hours > 4 && data.hours <= 24) {
     earnings = 4 * 1000;
-    overtime = (data.hours-4) * 200;
-    total = (4 * 1000) + overtime;
+    overtime = (data.hours - 4) * 200;
+    total = 4 * 1000 + overtime;
+    document.getElementById("warning-msg").style.display = "none";
   }
-  
+
+  // throw error when hours worked is more than 24hours
+  if (data.hours > 24) {
+    document.getElementById("warning-msg").style.display = "block";
+  }
+
   return { earnings, overtime, total };
 };
 

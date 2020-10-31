@@ -86,3 +86,7 @@ body {
   border-radius: 10px;
   border-bottom-left-radius: 0px;
 }
+
+#warning-msg {
+  display: none;
+}
