@@ -14,7 +14,7 @@ const income = (data) => {
 
   // earnings when hours worked is greater than four
   if (data.hours > 4 && data.hours <= 24) {
-    earnings = 4 * 1000;
+    earnings = data.hours * 1000;
     overtime = (data.hours - 4) * 200;
     total = 4 * 1000 + overtime;
     document.getElementById("warning-msg").style.display = "none";
